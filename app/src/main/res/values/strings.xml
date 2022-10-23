@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">DokterHalo</string>
+    <string name="openDrawer">Buka drawer</string>
+    <string name="closeDrawer">Tutup drawer</string>
 </resources>
