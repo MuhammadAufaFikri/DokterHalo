@@ -29,6 +29,15 @@ public class LeftFragment extends Fragment implements AdapterView.OnItemClickLis
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+        Bundle result = new Bundle();
+        if(adapter.getItem(i).equals("Home")){
+            result.putInt("page", 1);
+            getParentFragmentManager().setFragmentResult("changePage", result);
+        }else if(adapter.getItem(i).equals("Daftar")){
+            result.putInt("page", 2);
+            getParentFragmentManager().setFragmentResult("changePage", result);
+        }else{
+            getParentFragmentManager().setFragmentResult("closeApplication", result);
+        }
     }
 }
