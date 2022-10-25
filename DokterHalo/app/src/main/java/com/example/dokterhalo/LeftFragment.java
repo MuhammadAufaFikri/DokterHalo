@@ -15,9 +15,9 @@ public class LeftFragment {
                              Bundle savedInstanceState){
         View view = inflater.inflate(R.layout.fragment_left, container, false);
 
-        String[] menu = {"Home", "Daftar", "Watching List", "History", "Pengaturan", "Exit"};
-//        this.adapter = new MenuAdapter(this);
-//        this.adapter.add(menu);
+        String[] menu = {"Home", "Data Dokter", "Pertemuan", "Pengaturan"};
+        this.adapter = new MenuAdapter(this);
+        this.adapter.add(menu);
         this.lv = view.findViewById(R.id.lv_menu);
         this.lv.setAdapter(this.adapter);
 

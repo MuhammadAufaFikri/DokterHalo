@@ -1,6 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nama_pasien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama :"
+            android:layout_weight="1"
+            android:textSize="70px"/>
+
+        <TextView
+            android:id="@+id/nama_pasien_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/strokes_box"
+            android:text="name"
+            android:layout_weight="1"
+            android:padding="8dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nama_dokter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dokter :"
+            android:layout_weight="1"
+            android:textSize="70px"/>
+
+        <TextView
+            android:id="@+id/nama_dokter_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/strokes_box"
+            android:text="name"
+            android:layout_weight="1"
+            android:padding="8dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/keluhan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keluhan :"
+            android:layout_weight="1"
+            android:textSize="70px"/>
+
+        <TextView
+            android:id="@+id/keluhan_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/strokes_box"
+            android:text="name"
+            android:layout_weight="1"
+            android:padding="8dp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tanggal :"
+            android:layout_weight="1"
+            android:textSize="70px"/>
+
+        <TextView
+            android:id="@+id/tanggal_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/strokes_box"
+            android:text="name"
+            android:layout_weight="1"
+            android:padding="8dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/waktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Waktu :"
+            android:layout_weight="1"
+            android:textSize="70px"/>
+
+        <TextView
+            android:id="@+id/waktu_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/strokes_box"
+            android:text="name"
+            android:layout_weight="1"
+            android:padding="8dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

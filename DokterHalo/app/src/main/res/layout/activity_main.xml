@@ -12,30 +12,28 @@
 <!--        android:layout_height="wrap_content"-->
 <!--        android:text="Hello World!" />-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
+    <fragment
+    android:id="@+id/nav_host_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    app:defaultNavHost="true"
+    app:navGraph="@navigation/mobile_navigation" />
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                android:elevation="4dp"
-                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/fragment_container"
-                />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu" />
 
 
 
         </LinearLayout>
         <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/left_drawer"
             android:layout_width="240dp"
             android:layout_height="match_parent"
@@ -44,6 +42,7 @@
             >
             <fragment
                 android:id="@+id/left_fragment"
+                android:name="com.example.dokterhalo.MainFragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 />

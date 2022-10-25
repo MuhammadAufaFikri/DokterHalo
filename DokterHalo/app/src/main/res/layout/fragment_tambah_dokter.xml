@@ -43,84 +43,15 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/spesialis"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dokter :"
+            android:text="Spesialis :"
             android:layout_weight="1"
             android:textSize="70px"/>
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/strokes_box"
-            android:text="name"
-            android:layout_weight="1"
-            android:padding="8dp"
-            />
-
-    </LinearLayout>
-
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Keluhan :"
-            android:layout_weight="1"
-            android:textSize="70px"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/strokes_box"
-            android:text="name"
-            android:layout_weight="1"
-            android:padding="8dp"
-            />
-
-    </LinearLayout>
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Tanggal :"
-            android:layout_weight="1"
-            android:textSize="70px"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/strokes_box"
-            android:text="name"
-            android:layout_weight="1"
-            android:padding="8dp"
-            />
-
-    </LinearLayout>
-
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Waktu :"
-            android:layout_weight="1"
-            android:textSize="70px"/>
-
-        <EditText
+            android:id="@+id/spesialis_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/strokes_box"
@@ -135,8 +66,8 @@
         android:layout_marginTop="30dp"
         android:id="@+id/add_image"
         android:layout_width="match_parent"
-        android:layout_height="100dp"/>
-    <!--        android:src="@drawable/default_poster"-->
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher_person_foreground"/>
     <TextView
         android:id="@+id/uri"
         android:layout_gravity="center_horizontal"
