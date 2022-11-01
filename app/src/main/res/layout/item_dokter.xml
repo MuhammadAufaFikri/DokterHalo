@@ -1,54 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <TextView
-        android:id="@+id/nama_dokter"
-        android:text="Nama Dokter"
-        android:textSize="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:descendantFocusability="blocksDescendants">
+
     <ImageView
-        android:id="@+id/image"
-        android:layout_width="150sp"
-        android:layout_height="150sp"
-        android:layout_below="@+id/nama_dokter"
+        android:id="@+id/iv_photoDokter"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        tools:src="@tools:sample/avatars"
+
         />
-    <RelativeLayout
-        android:layout_toRightOf="@id/image"
-        android:layout_below="@id/nama_dokter"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20sp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/iv_photoDokter"
         >
-
         <TextView
-            android:id="@+id/label_spesialis"
-            android:text="Spesialis : "
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/tv_NamaDokterList"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="35sp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="nama">
+        </TextView>
         <TextView
-            android:layout_toRightOf="@+id/label_spesialis"
-            android:id="@+id/spesialis"
-            android:text="Spesialis"
+            android:layout_marginRight="10sp"
+            android:layout_marginLeft="10sp"
+            android:id="@+id/tv_spesialisDokterList"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <TextView
-            android:layout_below="@id/label_spesialis"
-            android:id="@+id/label_kontak"
-            android:text="Kontak : "
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <Button
-            android:id="@+id/btn_lihat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/label_kontak"
-            android:text="LIHAT JADWAL"
+            android:layout_height="30sp"
+            android:textSize="12sp"
+            android:text="spesialis"
             />
 
-    </RelativeLayout>
+
+    </LinearLayout>
+
+
 </RelativeLayout>
+

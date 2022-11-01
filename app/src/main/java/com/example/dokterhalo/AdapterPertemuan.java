@@ -1,4 +1,4 @@
 package com.example.dokterhalo;
 
-public class penyimpanData {
+public class AdapterPertemuan {
 }

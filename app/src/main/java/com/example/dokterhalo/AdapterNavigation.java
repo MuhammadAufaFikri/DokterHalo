@@ -9,12 +9,12 @@ import com.example.dokterhalo.databinding.ListButtonBinding;
 
 import java.util.ArrayList;
 
-public class adapterLeftFragment extends BaseAdapter {
+public class AdapterNavigation extends BaseAdapter {
     private Activity activity;
     protected ArrayList<String> list;
     private ListButtonBinding binding;
 
-    public adapterLeftFragment(Activity activity) {
+    public AdapterNavigation(Activity activity) {
         this.activity = activity;
         this.list = new ArrayList<>();
     }
@@ -50,16 +50,16 @@ public class adapterLeftFragment extends BaseAdapter {
             vh = new ViewHolder(binding, this, i);
             view.setTag(vh);
         }else{
-            vh = (ViewHolder) view.getTag();
+             vh= (ViewHolder) view.getTag();
         }
         return view;
     }
     class ViewHolder{
         private ListButtonBinding binding;
-        private adapterLeftFragment adapter;
+        private AdapterNavigation adapter;
         private int i;
 
-        public ViewHolder(ListButtonBinding binding, adapterLeftFragment adapter, int i){
+        public ViewHolder(ListButtonBinding binding, AdapterNavigation adapter, int i){
             this.binding = binding;
             this.adapter = adapter;
             this.i = i;

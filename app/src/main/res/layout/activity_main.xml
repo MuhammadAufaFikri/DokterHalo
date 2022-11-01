@@ -7,29 +7,28 @@
     android:id="@+id/drawer_layout"
     android:fitsSystemWindows="true">
 
-        <LinearLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--Toolbar-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                android:elevation="4dp"
-                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/fragment_container"
-                />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/fragment_container"
+            android:layout_weight="1"/>
+    </LinearLayout>
 
-
-
-        </LinearLayout>
     <!-- Left Drawer -->
     <RelativeLayout
         android:id="@+id/left_drawer"
@@ -38,11 +37,11 @@
         android:layout_gravity="start" >
 
         <fragment
-            android:name="com.example.dokterhalo.LeftFragment"
+            android:name="com.example.dokterhalo.FragmentNavigation"
             android:id="@+id/fragment_left"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            />
     </RelativeLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>
